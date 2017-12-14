@@ -1,1 +1,51 @@
+img{
+    max-width: 100%;
+}
 
+
+
+.profile-pic figure{
+    position: relative;
+    margin-bottom: 45px;
+}
+
+a{
+    text-decoration: none;
+    color: #a0caea
+}
+a:hover{
+    text-decoration: none;
+    color: #a0caea
+}
+
+.profile-pic div{
+    position: absolute;
+    bottom: 5px;
+    left: 80px; 
+}
+
+
+.fa{
+    font-size: 30px !important;
+    
+}
+
+.h-line{
+    padding-bottom:  40px;
+   border-bottom: 1px solid #0062cc;
+      
+   
+   
+}
+.right-colum{
+    padding: 30px;
+    color: #acaaab;
+}
+
+.expirience{
+    padding: 30px;
+}
+
+.user{
+    margin-bottom: 40px;
+}
