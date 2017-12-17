@@ -11,11 +11,11 @@ img{
 
 a{
     text-decoration: none;
-    color: #a0caea
+    color: #69b2e2;
 }
 a:hover{
     text-decoration: none;
-    color: #a0caea
+    color: #69b2e2
 }
 
 .profile-pic div{
@@ -24,19 +24,60 @@ a:hover{
     left: 80px; 
 }
 
+.mbottom{
+    margin-bottom: 40px;
+}
 
 .fa{
     font-size: 30px !important;
     
 }
 
+/*PROFILE*/
+
+.profile .fa{
+    margin-bottom: 15px ;
+}
+
 .h-line{
     padding-bottom:  40px;
-   border-bottom: 1px solid #0062cc;
-      
-   
-   
+   border-bottom: 1px solid #0092d2;
+}   
+
+
+/*skills */
+
+.skills .crte{
+    height: 2px;
+    width: 80%;
+    background: grey;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    position: relative;
 }
+
+.skills .crte .bela-crta{
+    height: 2px;
+    width: 80%;
+    background: white;
+    position: absolute;
+}
+
+.skills .crte .bela-crta .tacka{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: white;
+    position: absolute;
+    right: -4px;
+    top: -4px;
+}
+   
+   
+
+
+
+
 .right-colum{
     padding: 30px;
     color: #acaaab;
@@ -44,8 +85,25 @@ a:hover{
 
 .expirience{
     padding: 30px;
+    margin-bottom: 30px;
+}
+.expirience article{
+    margin-bottom: 30px;
 }
 
-.user{
-    margin-bottom: 40px;
+.expirience h1{
+    color: #737373;
+}
+
+.btop {
+    border-top: 1px solid #acaaab;
+    padding-top: 30px ;
+}
+
+
+
+.hobies img{
+   max-width: 15%;
+   margin-right: 20px;
+   
 }
