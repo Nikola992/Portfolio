@@ -1,3 +1,7 @@
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
 img{
     max-width: 100%;
 }
@@ -28,9 +32,13 @@ a:hover{
     margin-bottom: 40px;
 }
 
+.box-shadow{
+    box-shadow: 1px 1px 4.75px 0.25px rgba(24, 24, 24, 0.25);
+}
+
 .fa{
     font-size: 30px !important;
-    
+
 }
 
 /*PROFILE*/
@@ -41,7 +49,7 @@ a:hover{
 
 .h-line{
     padding-bottom:  40px;
-   border-bottom: 1px solid #0092d2;
+    border-bottom: 1px solid #0092d2;
 }   
 
 
@@ -72,10 +80,10 @@ a:hover{
     right: -4px;
     top: -4px;
 }
-   
-   
 
 
+
+/*Expirience*/
 
 
 .right-colum{
@@ -103,7 +111,85 @@ a:hover{
 
 
 .hobies img{
-   max-width: 15%;
-   margin-right: 20px;
-   
+    max-width: 15%;
+    margin-right: 20px;
+
+}
+
+
+
+
+/*Cover-letter*/
+
+.letter {
+    margin-bottom: 50px;
+}
+
+.cover-letter p:last-of-type{
+    font-family: 'Pacifico', cursive;
+}
+
+
+/*Portfolio*/
+.portfolio{
+    padding-left: 15px;
+}
+.portfolio  h3{
+    color: #fff;
+}
+
+
+.clanak-1-2{
+    padding-top: 30px;
+}
+
+.clanak-1-2 figure:first-of-type{
+    margin: 0;
+}
+
+.red-title{
+    background: #f15c5b;
+    padding: 20px;
+    color: #fff;
+
+}
+
+.tekst-1{
+    background: #fff;
+    color: #737373;
+    padding: 20px;
+}
+
+.grey-title{
+    background: #6a7484;
+    padding: 20px;
+    color: #fff;
+}
+
+
+.clanak-3-4{
+    padding-bottom: 30px;
+}
+
+.clanak-3-4 figure:first-of-type{
+    margin: 0;
+}
+
+.black-title{
+    background: #555157;
+    padding: 20px;
+    color: #fff;
+}
+
+.blue-title{
+    background: #1cbec8;
+    padding: 20px;
+    color: #fff;
+}
+.clanak-5
+{margin: 0;}
+.yellow-title{
+    background: #f4be18;
+     padding: 20px  20px 12px 20px;
+    color: #fff;
 }

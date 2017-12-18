@@ -1,27 +1,36 @@
 
 @media(min-width:576px){
- 
-    
-    
+
+
+
 }
 
 @media(min-width:768px){
- 
     
-    
+    .hobies{
+    padding-top: 30px;
+}
+
+    .cover-letter{
+        font-size: 20px;
+    }
+    .cover-letter p:last-of-type{
+    font-size: 30px;
+}
+
 }
 
 
 
 
 @media(min-width:992px){
-   
-    
-    
+
+
+
 }
 
 @media(min-width:1200px){
-   
-    
-    
+
+
+
 }
