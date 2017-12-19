@@ -111,7 +111,7 @@ a:hover{
 
 
 .hobies img{
-    max-width: 15%;
+    max-width: 50%;
     margin-right: 20px;
 
 }
@@ -133,6 +133,7 @@ a:hover{
 /*Portfolio*/
 .portfolio{
     padding-left: 15px;
+    position: relative;
 }
 .portfolio  h3{
     color: #fff;
@@ -143,12 +144,10 @@ a:hover{
     padding-top: 30px;
 }
 
-.clanak-1-2 figure:first-of-type{
-    margin: 0;
-}
+
 
 .red-title{
-    background: #f15c5b;
+   
     padding: 20px;
     color: #fff;
 
@@ -161,7 +160,7 @@ a:hover{
 }
 
 .grey-title{
-    background: #6a7484;
+  
     padding: 20px;
     color: #fff;
 }
@@ -176,20 +175,102 @@ a:hover{
 }
 
 .black-title{
-    background: #555157;
+    
     padding: 20px;
     color: #fff;
 }
 
 .blue-title{
-    background: #1cbec8;
+    
     padding: 20px;
     color: #fff;
 }
-.clanak-5
-{margin: 0;}
-.yellow-title{
-    background: #f4be18;
-     padding: 20px  20px 12px 20px;
+
+
+.masonery figure{
+    margin-bottom: 0;
+}
+.masonery article{
+    padding-bottom:  16px !important;
+}
+
+.masonery img{
+    width: 100% !important;
+    height: auto;
+    display: block;
+}
+
+.inactive{
+    overflow: hidden;
+}
+.aside{
+    position: relative;
+}
+.toggle-menu{
+    padding: 5px;
+    border: 1px solid #000;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 10;
+    border-radius: 4px;
+}
+.toggle-menu span{
+    display: block;
+    height: 2px;
+    margin-bottom: 3px;
+    width: 15px;
+    background: black;
+}
+
+.toggle-menu span:last-of-type{
+    margin-bottom: 0;
+}
+
+.menu-overlay{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    top: 0;
+    left: 0;
+    z-index: 15;
+    display: none;
+}
+
+.menu{
+    position: fixed;
+    left: -120%;
+    top: 0;
+    z-index: 20;
+    transition: 1s ease;
+}
+.menu.active{
+    left: 0px
+}
+.menu .side-menu{
+    height: 100vh;
+    background: #777;
+    padding: 10px;
+    min-width: 200px;
+    
+    
+}
+.menu .side-menu a{
+    display: block;
     color: #fff;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.fa-close{
+    position: absolute;
+    right: -30px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    top: 0;
+    font-size: 30px;
+    background: #ccc;
 }
