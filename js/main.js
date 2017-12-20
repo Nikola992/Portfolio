@@ -9,6 +9,40 @@ $(document).ready(function () {
         $('.menu').removeClass('active');
         $('body').removeClass('inactive');
     });
+    
+    
+    //ANIMACIJE
+    
+    function animation(){
+        var windowHeight = $(window).height();
+        var scroll = $(window).scrollTop();
+        $('.animation').each(function(){
+            var pozicija = $(this).offset().top;
+            var animacija = $(this).attr('data-animation');
+            if(pozicija<scroll + windowHeight -100){
+                $(this).addClass(animacija);
+            }
+        });
+    }
+    
+    function skill(){
+        var windowHeight = $(window).height();
+        var scroll = $(window).scrollTop();
+        $('.crte').each(function(){
+            var pozicija = $(this).offset().top;
+            var progres = $(this).attr('data-skill');
+            if(pozicija<scroll + windowHeight -100){
+                $(this).find('.tacka').css('width',progres + '%' );
+            }
+        });
+    }
+    skill();
+    
+    animation();
+    $(window).scroll(function(){
+       animation(); 
+       skill();
+    });
 
 
 });
