@@ -331,3 +331,10 @@ a:hover{
 .fa-paper-plane{
     display: none;
 }
+
+
+/*SINGLE section*/
+.headlines{
+    background: #f15c5b;
+    padding: 20px;
+}
