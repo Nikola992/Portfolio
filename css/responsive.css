@@ -1,7 +1,7 @@
 
 @media(min-width:576px){
 
-
+    
 
 }
 
@@ -17,7 +17,9 @@
     .cover-letter p:last-of-type{
     font-size: 30px;
 }
-
+.fa-paper-plane{
+      display: block;
+    }
 }
 
 
