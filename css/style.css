@@ -6,7 +6,11 @@ img{
     max-width: 100%;
 }
 
-
+.backgorund{
+    background-image: url('assets/background.01.jpg');
+    background-size: cover;
+    background-position: center;
+}
 
 .profile-pic figure{
     position: relative;
@@ -66,9 +70,10 @@ a:hover{
 
 .skills .crte .bela-crta{
     height: 2px;
-    width: 80%;
+    width: 0%;
     background: white;
     position: absolute;
+    transition: 1s linear;
 }
 
 .skills .crte .bela-crta .tacka{
@@ -185,7 +190,9 @@ a:hover{
     padding: 20px;
     color: #fff;
 }
-
+.masonery{
+    position: relative;
+}
 
 .masonery figure{
     margin-bottom: 0;
@@ -223,7 +230,7 @@ a:hover{
 
 
 
-.toggle-menu div span{
+.toggle-menu  span{
     display: block;
     height: 2px;
     margin-bottom: 3px;
@@ -269,11 +276,14 @@ a:hover{
 .menu .side-menu{
     height: 100vh;
     background: rgba(0,0,0,0.3);
-    padding: 10px;
+    padding: 40px 10px 10px 10px;
     min-width: 200px;
 
 
 }
+
+
+
 .menu .side-menu a{
     display: block;
     color: #fff;
@@ -337,4 +347,16 @@ a:hover{
 .headlines{
     background: #f15c5b;
     padding: 20px;
+}
+
+/*MAPS*/
+
+#map_wrapper {
+    height: 400px;
+   margin-bottom: 30px;
+}
+
+#map {
+    width: 100%;
+    height: 100%;
 }

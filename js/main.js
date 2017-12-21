@@ -31,8 +31,8 @@ $(document).ready(function () {
         $('.crte').each(function(){
             var pozicija = $(this).offset().top;
             var progres = $(this).attr('data-skill');
-            if(pozicija<scroll + windowHeight -100){
-                $(this).find('.tacka').css('width',progres + '%' );
+            if(pozicija<scroll + windowHeight -10){
+                $(this).find('.bela-crta').css('width',progres + '%' );
             }
         });
     }
