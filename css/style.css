@@ -38,7 +38,7 @@ a:hover{
 }
 
 .box-shadow{
-    box-shadow: 1px 1px 4.75px 0.25px rgba(24, 24, 24, 0.25);
+    box-shadow: 1px 1px 4.75px 0.25px rgb(2, 110, 196);
 }
 
 .right-colum section{
@@ -172,7 +172,7 @@ a:hover{
 }
 
 .tekst-1{
-    background: #fff;
+    
     color: #737373;
     padding: 20px;
 }
@@ -366,7 +366,7 @@ a:hover{
 
 #map_wrapper {
     height: 400px;
-   margin-bottom: 30px;
+   
 }
 
 #map {
