@@ -4,7 +4,8 @@
 
 img{
     max-width: 100%;
-    
+    max-height: 100%;
+
 }
 
 .backgorund{
@@ -12,6 +13,8 @@ img{
     background-size: cover;
     background-position: center;
 }
+
+
 
 .profile-pic figure{
     position: relative;
@@ -105,7 +108,7 @@ a:hover{
 
 
 .right-colum{
-    padding: 30px;
+    padding: 30px !important;
     color: #acaaab;
 }
 
@@ -148,12 +151,17 @@ a:hover{
 }
 
 
-/*Portfolio*/
-.portfolio{
+/*Blog*/
+.blog{
     padding-left: 15px;
     position: relative;
 }
-.portfolio  h3{
+.blog article{
+    margin-bottom: 16px;
+    
+}
+
+.blog  h3{
     color: #fff;
 }
 
@@ -172,7 +180,7 @@ a:hover{
 }
 
 .tekst-1{
-    
+
     color: #737373;
     padding: 20px;
 }
@@ -254,7 +262,7 @@ a:hover{
 .toggle-menu:hover {
     background:rgb(2, 110, 196);
     border: 1px solid #fff;
-     
+
 }
 .toggle-menu:hover span{
     background: #fff;
@@ -288,7 +296,7 @@ a:hover{
 }
 .menu .side-menu{
     height: 100vh;
-    background: rgba(0,0,0,0.3);
+    background: rgba(0,0,0,0.9);
     padding: 40px 10px 10px 10px;
     min-width: 200px;
 
@@ -308,8 +316,8 @@ a:hover{
 }
 .menu .side-menu a:hover{
     color: #38a4dd;
-     border: 1px solid #38a4dd ;
-     transition: 0.25s linear
+    border: 1px solid #38a4dd ;
+    transition: 0.25s linear
 }
 
 .fa-close{
@@ -362,14 +370,78 @@ a:hover{
     padding: 20px;
 }
 
-/*MAPS*/
-
-#map_wrapper {
-    height: 400px;
-   
+.comments{
+    padding: 0;
+    border: none !important;
+    
 }
 
-#map {
-    width: 100%;
-    height: 100%;
+
+
+.comments figure{
+    max-width: 20%;
+    min-width: 65px;
+    max-height: 140px;
+    overflow: hidden;
+    margin-bottom: 0 !important;
 }
+
+.comment-content{
+    padding: 10px 15px;
+}
+
+
+
+
+    /*MAPS*/
+
+    #map_wrapper {
+        height: 400px;
+
+    }
+
+    #map {
+        width: 100%;
+        height: 100%;
+    }
+
+    /*Portfolio*/
+
+    .portfolio a{
+        position: relative;
+        display: block;
+    }
+
+    .portfolio a h5{
+        font-weight: bold;
+    }
+
+    .portfolio a .hover{
+        display: none;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background: rgba(0,0,0,0.7);
+    }
+
+    .portfolio a:hover .hover{
+        display: block;
+    }
+
+    .portfolio a figure{
+        overflow: hidden;
+    }
+
+    .portfolio a img{
+        transition: 1s  ease-in-out;
+    }
+
+    .portfolio a:hover img{
+        transform:scale(1.1);
+    }
+
+    .portfolio img{
+        width: 100%;
+    }
