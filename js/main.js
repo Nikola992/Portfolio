@@ -9,39 +9,60 @@ $(document).ready(function () {
         $('.menu').removeClass('active');
         $('body').removeClass('inactive');
     });
-    
-    
+
+
     //ANIMACIJE
-    
-    function animation(){
+
+    function animation() {
         var windowHeight = $(window).height();
         var scroll = $(window).scrollTop();
-        $('.animation').each(function(){
+        $('.animation').each(function () {
             var pozicija = $(this).offset().top;
             var animacija = $(this).attr('data-animation');
-            if(pozicija<scroll + windowHeight -100){
+            if (pozicija < scroll + windowHeight - 100) {
                 $(this).addClass(animacija);
             }
         });
     }
-    
-    function skill(){
+
+    function skill() {
         var windowHeight = $(window).height();
         var scroll = $(window).scrollTop();
-        $('.crte').each(function(){
+        $('.crte').each(function () {
             var pozicija = $(this).offset().top;
             var progres = $(this).attr('data-skill');
-            if(pozicija<scroll + windowHeight -10){
-                $(this).find('.bela-crta').css('width',progres + '%' );
+            if (pozicija < scroll + windowHeight - 10) {
+                $(this).find('.bela-crta').css('width', progres + '%');
             }
         });
     }
     skill();
-    
+
     animation();
-    $(window).scroll(function(){
-       animation(); 
-       skill();
+    $(window).scroll(function () {
+        animation();
+        skill();
+    });
+
+
+
+    function animation() {
+        var windowHight = $(window).height();
+        var scroll = $(window).scrollTop();
+        $('.animation').each(function () {
+            var pozicija = $(this).offset().top;
+            var animacija = $(this).attr('data-animation');
+            if (pozicija < scroll + windowHight - 20) {
+                $(this).addClass(animacija);
+            }
+        });
+
+    }
+
+    animation();
+
+    $(window).scroll(function () {
+        animation();
     });
 
 

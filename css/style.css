@@ -57,6 +57,15 @@ a:hover{
 
 }
 
+.has-success .form-control-success {
+    background-image: url('assets/thumbs-up.png');
+}
+
+.has-danger .form-control-danger {
+    background-image: url('assets/thumbs-down.png');
+
+}
+
 /*PROFILE*/
 
 .profile .fa{
@@ -158,7 +167,7 @@ a:hover{
 }
 .blog article{
     margin-bottom: 16px;
-    
+
 }
 
 .blog  h3{
@@ -231,6 +240,41 @@ a:hover{
 .inactive{
     overflow: hidden;
 }
+
+@keyframes slideDown {
+    0%{
+        opacity:0;
+        transform:translateY(-50%);
+    }
+    100%{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+.slideDowm{
+    animation-name: slideDown;
+    visibility:visible;
+    animation-duration: 1s;
+}
+
+@keyframes slideUp {
+    0%{
+        opacity:0;
+        transform:translateY(50%);
+    }
+    100%{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+.slideUp{
+    animation-name: slideUp;
+    visibility:visible;
+    animation-duration: 1s;
+}
+
 
 /* TOGGLE menu*/
 
@@ -373,7 +417,7 @@ a:hover{
 .comments{
     padding: 0;
     border: none !important;
-    
+
 }
 
 
@@ -393,55 +437,98 @@ a:hover{
 
 
 
-    /*MAPS*/
+/*MAPS*/
 
-    #map_wrapper {
-        height: 400px;
+#map_wrapper {
+    height: 400px;
 
+}
+
+#map {
+    width: 100%;
+    height: 100%;
+}
+
+/*Portfolio*/
+
+.portfolio a{
+    position: relative;
+    display: block;
+}
+
+.portfolio a h5{
+    font-weight: bold;
+}
+
+.portfolio a .hover{
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.7);
+}
+
+.portfolio a:hover .hover{
+    display: block;
+}
+
+.portfolio a figure{
+    overflow: hidden;
+}
+
+.portfolio a img{
+    transition: 1s  ease-in-out;
+}
+
+.portfolio a:hover img{
+    transform:scale(1.1);
+}
+
+.portfolio img{
+    width: 100%;
+}
+
+@keyframes slideLeft {
+    0%{
+        opacity:0;
+        transform:translateX(150%);
     }
-
-    #map {
-        width: 100%;
-        height: 100%;
+    
+    100%{
+        opacity:1;
+        transform:translateX(0);
     }
+}
 
-    /*Portfolio*/
+.slideLeft{
+    animation-name: slideLeft;
+    visibility:visible;
+    animation-duration: 2s;
+}
 
-    .portfolio a{
-        position: relative;
-        display: block;
+
+
+@keyframes slideRight {
+    0%{
+        opacity:0;
+        transform:translateX(-250%);
     }
-
-    .portfolio a h5{
-        font-weight: bold;
+  
+  
+    50%{
+         opacity:0.5;
+        
     }
-
-    .portfolio a .hover{
-        display: none;
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        top: 0;
-        left: 0;
-        background: rgba(0,0,0,0.7);
+    100%{
+        opacity:1;
+        transform:translateX(0);
     }
+}
 
-    .portfolio a:hover .hover{
-        display: block;
-    }
-
-    .portfolio a figure{
-        overflow: hidden;
-    }
-
-    .portfolio a img{
-        transition: 1s  ease-in-out;
-    }
-
-    .portfolio a:hover img{
-        transform:scale(1.1);
-    }
-
-    .portfolio img{
-        width: 100%;
-    }
+.slideRight{
+    animation-name: slideRight;
+    visibility:visible;
+    animation-duration: 2s;
+}
