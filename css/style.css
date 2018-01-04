@@ -9,13 +9,13 @@ img{
 }
 
 .backgorund{
-/*    background-image: url('assets/background-1.jpeg');
-    background-size: cover;
-    background-position: center;*/
+
     background: linear-gradient(to right, rgb(2, 110, 196)  ,  black 20%, black 80% ,  rgb(2, 110, 196) ) 
 }
 
-
+section.fade-in{
+    display: none;
+}
 
 .profile-pic figure{
     position: relative;

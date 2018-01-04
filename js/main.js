@@ -64,6 +64,17 @@ $(document).ready(function () {
     $(window).scroll(function () {
         animation();
     });
+    
+    
+   // Section fade in
+   
+    $('section.fade-in').fadeIn(2000).removeClass('.fade-in');
+   
+//   $(window).scroll(function () {
+//        fadeIn();
+//    });
+   
+
 
 
 });
