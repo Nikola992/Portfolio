@@ -10,7 +10,7 @@ img{
 
 .backgorund{
 
-    background: linear-gradient(to right, rgb(2, 110, 196)  ,  black 20%, black 80% ,  rgb(2, 110, 196) ) 
+    background: linear-gradient(to right, rgb(2, 110, 196)  ,  #fff 30%, #fff 75% ,  rgb(2, 110, 196) ) 
 }
 
 section.fade-in{
@@ -42,7 +42,7 @@ a:hover{
 }
 
 .box-shadow{
-    box-shadow: 1px 1px 4.75px 0.25px rgb(2, 110, 196);
+    box-shadow: 1px 1px 4.75px 0.25px #0a91f0;
 }
 
 .right-colum section{
@@ -68,6 +68,13 @@ a:hover{
 }
 
 /*PROFILE*/
+.profile{
+    background:linear-gradient( to bottom left, #0a91f0 , #6ebef6 )
+}
+
+.profile-pic figure{
+    margin-left: -15px;
+}
 
 .profile .fa{
     margin-bottom: 15px ;
@@ -75,11 +82,9 @@ a:hover{
 
 .h-line{
     padding-bottom:  40px;
-    border-bottom: 1px solid #0092d2;
+    border-bottom: 1px solid #fff;
 }   
-.aside{
-    border: 1px solid rgb(2, 110, 196)
-}
+
 
 /*skills */
 
@@ -110,9 +115,7 @@ a:hover{
     top: -4px;
 }
 
-.int{
-    margin-top:  15px;
-}
+
 
 /*Expirience*/
 
@@ -182,7 +185,7 @@ a:hover{
 
 
 
-.red-title{
+.title{
 
     padding: 20px;
     color: #fff;
@@ -195,13 +198,6 @@ a:hover{
     padding: 20px;
 }
 
-.grey-title{
-
-    padding: 20px;
-    color: #fff;
-}
-
-
 .clanak-3-4{
     padding-bottom: 30px;
 }
@@ -210,17 +206,6 @@ a:hover{
     margin: 0;
 }
 
-.black-title{
-
-    padding: 20px;
-    color: #fff;
-}
-
-.blue-title{
-
-    padding: 20px;
-    color: #fff;
-}
 .masonery{
     position: relative;
 }
@@ -451,7 +436,9 @@ a:hover{
 }
 
 /*Portfolio*/
-
+.portfolio{
+    overflow: hidden;
+}
 .portfolio a{
     position: relative;
     display: block;
